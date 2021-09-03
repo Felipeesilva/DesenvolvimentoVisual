@@ -6,6 +6,8 @@ namespace API.Models
     {
         //construtor
         public Produto() => CriadoEm = DateTime.Now;
+
+        public int Id { get; set; }
         public string Nome { get; set; }
 
         public double Preco { get; set; }
