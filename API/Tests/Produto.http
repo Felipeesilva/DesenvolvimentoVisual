@@ -1,4 +1,4 @@
-###
+### CADASTRAR
 POST https://localhost:5001/api/produto/create
 Content-Type: application/json
 
@@ -7,6 +7,24 @@ Content-Type: application/json
     "Preco": 3.5
 }
 
-###
+### LISTAR
 
 GET https://localhost:5001/api/produto/list
+
+### BUSCAR POR ID
+
+GET https://localhost:5001/api/produto/getbyid/1
+
+### DELETAR PELO NOME
+DELETE https://localhost:5001/api/produto/delete/Bolacha
+
+### ALTERAR PRODUTO
+
+PUT https://localhost:5001/api/produto/update/1
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Nome" : "Bolacha alterada",
+    "Preco": 3.5
+}
